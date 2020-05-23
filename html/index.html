@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sileshichukala.se Portfolio webpage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../images/favicon.png">
+	<link rel="stylesheet" href="../css/personal-portfolio.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../Javascript/index.js"></script>
+	<?php include 'contactform.php';?>
+</head>
+<body>
+	<main id="main-doc">
+		    <nav id="navbar">
+				<input type="checkbox" id="nav-toggle" class="nav-toggle">
+				<ul id="navbar_1ul">
+					<li><a href="#welcome_section" rel="internal">Home</a></li>
+					<li><a href="#about_section" rel="internal">About</a></li>
+					<li><a href="#project-section" rel="internal">Projects</a></li>
+					<li><a href="#contact-section" rel="internal">Contact</a></li>
+				</ul>
+				<ul id="navbar_2ul">
+					<a href="#"><label for="nav-toggle" class="nav-toggle-label"><i class="fa fa-bars"></i></label></a>
+					<a href="#" title="CV" download><i class="fa fa-file-text"></i></a>
+					<a href="mailto:sileshic@gmail.com" title="Email"><i class="fa fa-envelope-o"></i></a>
+					<a href="https://github.com/Chukala?tab=repositories" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/sileshi-chukala-06b930a5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoKZ2NKRsT9itq7JQklW%2Fnw%3D%3D" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://twitter.com/sileshichukala" title="Twitter" target="_blank" id="twitter"><i class="fa fa-twitter"></i></a>
+				</ul>
+		    </nav>
+
+			<section id="welcome_section">
+				<div class="hero_div" id="hero_div">
+					<div class="container">
+				  		<h1>Hi,</h1>
+						<h2>I'm <span id="name">Sileshi</span></h2>
+						<h4>Web Designer & Ecommerce web Developer</h4>
+						<a href="#about_section" rel="internal" id="arrow" title="Click to read more"><i class="fa fa-3x fa-angle-down"></i></a>
+				  	</div>
+				</div>
+			</section>
+
+			<section id="about_section">
+				<div class="about_div" id="about_div">
+					   <div class="bg-image">
+					      <img src="../images/image_small.png" alt="profile_pic" id="profile_pic">
+					   </div>
+					   <div class="about_container">
+						   <h1>About</h1>
+						   <h3>Hi,my name is Sileshi Chukala.</h3>
+						   <p>I'm a highly motivated web designer and front-end developer living in Stockholm, Sweden. I'm currently studying e-commerce web development at changemakers educations in Stockholm. I will finish my studies in December 2019 and currently looking for an Internship.</p>
+					   </div>
+				</div>
+			</section>
+
+			<section id="project-section">
+			    <div class="header">
+					<header>These are some of my projects...</header>
+				</div>
+
+				<div class="project_div" id="project_div">
+				     <div class="project-title">
+							 <img src="../images/screencapture_11.png" alt="project1" id="project_img_1">
+							 <figcaption><a href="https://codepen.io/Sileshi/pen/wQBJjm" target="_blank" title="Shoping">Link to <i class="fa fa-github"></i></a></figcaption>
+				     </div>
+
+				     <div class="project-title">
+							 <img src="../images/dreamShop_1.png" alt="project2" id="project_img_2">
+							 <figcaption><a href="https://github.com/Chukala/webserver_sileshi" target="_blank" title="DreamShop">Link to <i class="fa fa-github"></i></a></figcaption>
+				     </div>
+
+						 <div class="project-title">
+							 <img src="../images/grocery-store.png" alt="project2" id="project_img_3">
+							 <figcaption><a href="http://matvaror.sileshichukala.se/" target="_blank" title="Grocery">Link to <i class="fa fa-shopping-bag"></i></a></figcaption>
+				     </div>
+				</div>
+
+				<div class="button">
+				    	<button>
+				    		<a href="#project-section" rel="internal">Show all</a>
+				    	</button>
+				</div>
+			</section>
+
+			<section id="contact-section">
+				<div class="contact_div" id="contact_div">
+						<h2>Contact</h2>
+						<form id="my-form" action="contactform.php"  method="post" enctype="text/plain">
+							<label for="name" id="name-label">Name*</label>
+							<input name="name" type="text" placeholder="Enter your name" required><br>
+							<label for="email" id="email-label">Email*</label>
+							<input name="email" type="email" placeholder="Enter your email" required><br>
+							<label for="message" id="textarea-label">Message*</label>
+							<textarea name="message" id="textarea" cols="25" rows="5" placeholder="write a message here" required></textarea><br>
+							<input type="submit" value="Send">
+						</form>
+				</div>
+			</section>
+
+			<section id="footer-section">
+				<div class="footer-icon">
+					    <a href="#" title="CV" download><i class="fa fa-file-text"></i></a>
+					    <a href="mailto:sileshic@gmail.com" title="Email"><i class="fa fa-envelope-o"></i></a>
+					    <a href="https://github.com/Chukala?tab=repositories" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+					    <a href="https://www.linkedin.com/in/sileshi-chukala-06b930a5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoKZ2NKRsT9itq7JQklW%2Fnw%3D%3D" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+					    <a href="https://twitter.com/sileshichukala" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="footer-section">
+				     <p>© 2019 - Sileshi Chukala</p>
+				</div>
+			</section>
+			<!--for go to top sticky in the footer-->
+	        <a href="#" class="go-top" style="display: none;"><i class="fa fa-angle-up fa-2x"></i></a>
+	</main>
+</body>
+</html>
